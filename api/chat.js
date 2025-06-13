@@ -44,7 +44,7 @@ export default async function handler(req, res) {
         messages: image
           ? [{ role: "user", content }]
           : messages,
-        max_tokens: 1000,
+        max_tokens: 2000,
       }),
     });
 

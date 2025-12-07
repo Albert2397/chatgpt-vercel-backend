@@ -40,7 +40,7 @@ export default async function handler(req, res) {
       method: "POST",
       headers,
       body: JSON.stringify({
-        model: image ? "gpt-5" : "gpt-5",
+        model: image ? "gpt-5.1" : "gpt-5.1",
         messages: image
           ? [{ role: "user", content }]
           : messages,
